@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天天爱消除</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Match-3 puzzle</p>
+          <h1>天天爱消除</h1>
+        </div>
+        <div class="hud">
+          <div>
+            <span>分数</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>步数</span>
+            <strong id="moves">25</strong>
+          </div>
+          <div>
+            <span>目标</span>
+            <strong id="target">1800</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="game-layout">
+        <section class="game-shell">
+          <div id="game-root"></div>
+        </section>
+        <aside class="side-panel">
+          <div>
+            <h2>关卡 1</h2>
+            <p id="status">交换相邻方块，消除三个及以上同色元素。</p>
+          </div>
+          <div class="rules">
+            <span>四连生成直线特效</span>
+            <span>五连生成爆炸特效</span>
+            <span>连续消除有连击加成</span>
+          </div>
+          <button id="restart" type="button">重新开始</button>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
